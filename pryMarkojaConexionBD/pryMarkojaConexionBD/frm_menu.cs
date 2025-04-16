@@ -27,5 +27,10 @@ namespace pryMarkojaConexionBD
                 MessageBox.Show("Error: " + ex);
             }
         }
+
+        private void btn_mostrar_Click(object sender, EventArgs e)
+        {
+            cls_bd_conexion.buscar_producto();
+        }
     }
 }

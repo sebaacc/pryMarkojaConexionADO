@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace pryMarkojaConexionBD
 {
@@ -15,20 +16,41 @@ namespace pryMarkojaConexionBD
                 {
                     connection.Open();
                     MessageBox.Show("✅ Conexión exitosa a la base de datos.");
-                    return true; // Indica que la conexión fue exitosa
+                    return true;
                 }
-                catch (SqlException ex) // Es mejor capturar excepciones específicas de SQL
+                catch (SqlException ex)
                 {
                     MessageBox.Show($"❌ Error al conectar a la base de datos: {ex.Message}\n\nDetalles:\n{ex.StackTrace}");
-                    return false; // Indica que la conexión falló
+                    return false;
                 }
-                catch (Exception ex) // Captura otras posibles excepciones
+                catch (Exception ex)
                 {
                     MessageBox.Show($"❌ Error inesperado al conectar: {ex.Message}\n\nDetalles:\n{ex.StackTrace}");
                     return false;
                 }
             }
         }
+        public static void buscar_producto()
+        {
+            string query = "SELECT * FROM Productos";
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            SqlCommand command = new SqlCommand(query, connection);
+            connection.Open();
+            using (SqlDataReader reader = command.ExecuteReader())
+            {
+                try
+                {
+                    while (reader.Read())
+                    {
+                        MessageBox.Show($"{reader["Nombre"]} - {reader["Descripcion"]}");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"❌ Error inesperado al conectar: {ex.Message}\n\nDetalles:\n{ex.StackTrace}");
+                }
 
+            }
+        }
     }
 }
