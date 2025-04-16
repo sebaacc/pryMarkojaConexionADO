@@ -1,0 +1,13 @@
+E:\Escritorio\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.csproj.AssemblyReference.cache
+E:\Escritorio\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.frm_menu.resources
+E:\Escritorio\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.Properties.Resources.resources
+E:\Escritorio\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.csproj.GenerateResource.cache
+E:\Escritorio\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.csproj.CoreCompileInputs.cache
+E:\Escritorio\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\bin\Debug\pryMarkojaConexionBD.exe.config
+E:\Escritorio\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\bin\Debug\pryMarkojaConexionBD.exe
+E:\Escritorio\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\bin\Debug\pryMarkojaConexionBD.pdb
+E:\Escritorio\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\bin\Debug\System.Data.SqlClient.dll
+E:\Escritorio\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\bin\Debug\System.Data.SqlClient.xml
+E:\Escritorio\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarko.B1AFA623.Up2Date
+E:\Escritorio\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.exe
+E:\Escritorio\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.pdb

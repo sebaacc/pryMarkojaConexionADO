@@ -1,0 +1,74 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Escritorio\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E43D6-40C5-47B1-A79C-2D9545F3A2DE}|pryMarkojaConexionBD\\pryMarkojaConexionBD.csproj|e:\\escritorio\\prymarkojaconexionbd\\prymarkojaconexionbd\\prymarkojaconexionbd\\frm_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E4E43D6-40C5-47B1-A79C-2D9545F3A2DE}|pryMarkojaConexionBD\\pryMarkojaConexionBD.csproj|solutionrelative:prymarkojaconexionbd\\frm_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E43D6-40C5-47B1-A79C-2D9545F3A2DE}|pryMarkojaConexionBD\\pryMarkojaConexionBD.csproj|e:\\escritorio\\prymarkojaconexionbd\\prymarkojaconexionbd\\prymarkojaconexionbd\\cls_bd_conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E4E43D6-40C5-47B1-A79C-2D9545F3A2DE}|pryMarkojaConexionBD\\pryMarkojaConexionBD.csproj|solutionrelative:prymarkojaconexionbd\\cls_bd_conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E43D6-40C5-47B1-A79C-2D9545F3A2DE}|pryMarkojaConexionBD\\pryMarkojaConexionBD.csproj|e:\\escritorio\\prymarkojaconexionbd\\prymarkojaconexionbd\\prymarkojaconexionbd\\frm_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4E4E43D6-40C5-47B1-A79C-2D9545F3A2DE}|pryMarkojaConexionBD\\pryMarkojaConexionBD.csproj|solutionrelative:prymarkojaconexionbd\\frm_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frm_menu.cs",
+              "DocumentMoniker": "E:\\Escritorio\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\frm_menu.cs",
+              "RelativeDocumentMoniker": "pryMarkojaConexionBD\\frm_menu.cs",
+              "ToolTip": "E:\\Escritorio\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\frm_menu.cs",
+              "RelativeToolTip": "pryMarkojaConexionBD\\frm_menu.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T18:10:32.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "cls_bd_conexion.cs",
+              "DocumentMoniker": "E:\\Escritorio\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\cls_bd_conexion.cs",
+              "RelativeDocumentMoniker": "pryMarkojaConexionBD\\cls_bd_conexion.cs",
+              "ToolTip": "E:\\Escritorio\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\cls_bd_conexion.cs",
+              "RelativeToolTip": "pryMarkojaConexionBD\\cls_bd_conexion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T17:56:49.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frm_menu.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\Escritorio\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\frm_menu.cs",
+              "RelativeDocumentMoniker": "pryMarkojaConexionBD\\frm_menu.cs",
+              "ToolTip": "E:\\Escritorio\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\frm_menu.cs [Dise\u00F1o]",
+              "RelativeToolTip": "pryMarkojaConexionBD\\frm_menu.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T17:45:31.961Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
