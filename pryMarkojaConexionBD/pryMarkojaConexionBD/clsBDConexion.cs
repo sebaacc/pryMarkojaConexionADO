@@ -5,7 +5,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace pryMarkojaConexionBD
 {
-    public class cls_bd_conexion
+    public class clsBDConexion
     {
         private const string ConnectionString = "Server=localhost;Database=Tienda;Trusted_Connection=True;";
         public static bool probar_conexion()
@@ -14,8 +14,9 @@ namespace pryMarkojaConexionBD
             {
                 try
                 {
+                    string nombreBaseDeDatos = connection.Database;
                     connection.Open();
-                    MessageBox.Show("✅ Conexión exitosa a la base de datos.");
+                    MessageBox.Show("✅ Conexión exitosa a la base de datos: " + nombreBaseDeDatos);
                     return true;
                 }
                 catch (SqlException ex)
@@ -30,8 +31,10 @@ namespace pryMarkojaConexionBD
                 }
             }
         }
-        public static void buscar_producto()
+        public static void buscar_productos()
         {
+            string[] productos;
+
             string query = "SELECT * FROM Productos";
             SqlConnection connection = new SqlConnection(ConnectionString);
             SqlCommand command = new SqlCommand(query, connection);
@@ -42,7 +45,8 @@ namespace pryMarkojaConexionBD
                 {
                     while (reader.Read())
                     {
-                        MessageBox.Show($"{reader["Nombre"]} - {reader["Descripcion"]}");
+                        //MessageBox.Show($"{reader["Nombre"]} - {reader["Descripcion"]}");
+                        productos += ($"{reader["Nombre"]} - {reader["Descripcion"]}");
                     }
                 }
                 catch (Exception ex)

@@ -11,3 +11,11 @@ E:\Escritorio\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\bin
 E:\Escritorio\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarko.B1AFA623.Up2Date
 E:\Escritorio\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.exe
 E:\Escritorio\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.pdb
+E:\Escritorio\pryMarkojaConexionADO\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.csproj.AssemblyReference.cache
+E:\Escritorio\pryMarkojaConexionADO\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\appGestionPequeñoNegocio.FormularioMenu.resources
+E:\Escritorio\pryMarkojaConexionADO\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.frm_menu.resources
+E:\Escritorio\pryMarkojaConexionADO\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.Properties.Resources.resources
+E:\Escritorio\pryMarkojaConexionADO\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.csproj.GenerateResource.cache
+E:\Escritorio\pryMarkojaConexionADO\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.csproj.CoreCompileInputs.cache
+E:\Escritorio\pryMarkojaConexionADO\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.exe
+E:\Escritorio\pryMarkojaConexionADO\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.pdb
