@@ -10,7 +10,7 @@ namespace pryMarkojaConexionBD
     {
         public List<clsProducto> productos = new List<clsProducto>();
 
-        public void cargarProducto(int codigo, string nombre, string descripcion, double precio, int stock, string Categoria)
+        public void cargarProducto(int codigo, string nombre, string descripcion, decimal precio, int stock, string categoria)
         {
             clsProducto aux = new clsProducto();
             aux.codigo = codigo;
@@ -18,7 +18,7 @@ namespace pryMarkojaConexionBD
             aux.descripcion = descripcion;
             aux.precio = precio;
             aux.stock = stock;
-            aux.Categoria = Categoria;
+            aux.categoria = categoria;
         }
 
     }

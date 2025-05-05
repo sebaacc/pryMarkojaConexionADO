@@ -21,9 +21,9 @@ namespace pryMarkojaConexionBD
         String nombre;
         String descripcion;
         String categoria;
-        double precio;
+        decimal precio;
         int stock;
-        clsListaProductos listaProductos;
+        clsListaProductos listaProductos = new clsListaProductos();
 
         private void frm_menu_Load(object sender, EventArgs e)
         {
@@ -36,7 +36,9 @@ namespace pryMarkojaConexionBD
                 dgvDatos.Columns.Add("Categoria", "Categoría");
                 dgvDatos.Columns.Add("Stock", "Stock");
 
-                clsBDConexion.probar_conexion();
+                clsBDConexion.ProbarConexion(); 
+                //listaProductos.productos = clsBDConexion.BuscarProductos();
+                //MessageBox.Show(listaProductos.productos[0].nombre);
             }
             catch (Exception ex)
             {
@@ -56,7 +58,7 @@ namespace pryMarkojaConexionBD
                 codigo = Convert.ToInt32(txtCodigo.Text);
                 nombre = txtNombre.Text;
                 descripcion = txtDescripcion.Text;
-                precio = Convert.ToDouble(txtPrecio.Text);
+                precio = Convert.ToDecimal(txtPrecio.Text);
                 categoria = txtCategoria.Text;
                 stock = Convert.ToInt32(txtStock.Text);
 

@@ -19,3 +19,16 @@ E:\Escritorio\pryMarkojaConexionADO\pryMarkojaConexionBD\pryMarkojaConexionBD\ob
 E:\Escritorio\pryMarkojaConexionADO\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.csproj.CoreCompileInputs.cache
 E:\Escritorio\pryMarkojaConexionADO\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.exe
 E:\Escritorio\pryMarkojaConexionADO\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.pdb
+D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.csproj.AssemblyReference.cache
+D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.frm_menu.resources
+D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.Properties.Resources.resources
+D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.csproj.GenerateResource.cache
+D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.csproj.CoreCompileInputs.cache
+D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\bin\Debug\pryMarkojaConexionBD.exe.config
+D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\bin\Debug\pryMarkojaConexionBD.exe
+D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\bin\Debug\pryMarkojaConexionBD.pdb
+D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\bin\Debug\System.Data.SqlClient.dll
+D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\bin\Debug\System.Data.SqlClient.xml
+D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarko.B1AFA623.Up2Date
+D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.exe
+D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.pdb

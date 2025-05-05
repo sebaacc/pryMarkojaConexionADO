@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
@@ -8,7 +9,7 @@ namespace pryMarkojaConexionBD
     public class clsBDConexion
     {
         private const string ConnectionString = "Server=localhost;Database=Tienda;Trusted_Connection=True;";
-        public static bool probar_conexion()
+        public static bool ProbarConexion()
         {
             using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
@@ -31,10 +32,9 @@ namespace pryMarkojaConexionBD
                 }
             }
         }
-        public static void buscar_productos()
+        public static List<clsProducto> BuscarProductos()
         {
-            string[] productos;
-
+            List<clsProducto> productos = new List<clsProducto>();
             string query = "SELECT * FROM Productos";
             SqlConnection connection = new SqlConnection(ConnectionString);
             SqlCommand command = new SqlCommand(query, connection);
@@ -43,18 +43,29 @@ namespace pryMarkojaConexionBD
             {
                 try
                 {
+                    
                     while (reader.Read())
                     {
-                        //MessageBox.Show($"{reader["Nombre"]} - {reader["Descripcion"]}");
-                        productos += ($"{reader["Nombre"]} - {reader["Descripcion"]}");
+                        clsProducto producto = new clsProducto
+                        {
+                            codigo = Convert.ToInt32(reader["Codigo"].ToString()),
+                            nombre = reader["Nombre"].ToString(),
+                            descripcion = reader["Descripcion"].ToString(),
+                            precio = Convert.ToDecimal(reader["Precio"].ToString()),
+                            stock = Convert.ToInt32(reader["Stock"].ToString()),
+                            categoria = reader["Categoria"].ToString()
+                        };
+                        productos.Add(producto);
                     }
+                    
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"❌ Error inesperado al conectar: {ex.Message}\n\nDetalles:\n{ex.StackTrace}");
+                    MessageBox.Show($"❌ Error inesperado al buscar productos: {ex.Message}\n\nDetalles:\n{ex.StackTrace}");
                 }
-
             }
+            connection.Close();
+            return productos;
         }
     }
 }
