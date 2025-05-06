@@ -110,12 +110,7 @@ namespace pryMarkojaConexionBD
                 listaProductos.GuardarDatos(); // Se guarda el dato en la bd.
                 listaProductos.CargarGrilla(dgvDatos); // Se muestra la dgv actualizada.
 
-                txtCodigo.Clear();
-                txtNombre.Clear();
-                txtDescripcion.Clear();
-                txtPrecio.Clear();
-                cmbCategoria.SelectedIndex = -1;
-                txtStock.Clear();
+                FormatearCampos();
             }
             catch (Exception ex)
             {
@@ -208,6 +203,82 @@ namespace pryMarkojaConexionBD
 
                 }
             }
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtCodigo.Text))
+            {
+                MessageBox.Show("Selecciona un producto para modificar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!int.TryParse(txtCodigo.Text, out int codigo) ||
+                !decimal.TryParse(txtPrecio.Text, out decimal precio) ||
+                !int.TryParse(txtStock.Text, out int stock))
+            {
+                MessageBox.Show("Código, precio o stock con formato incorrecto.", "Error de datos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string nombre = txtNombre.Text.Trim();
+            string descripcion = txtDescripcion.Text.Trim();
+            string categoria = cmbCategoria.Text.Trim();
+
+            if (string.IsNullOrWhiteSpace(nombre) || string.IsNullOrWhiteSpace(descripcion) || string.IsNullOrWhiteSpace(categoria))
+            {
+                MessageBox.Show("Todos los campos deben estar completos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            clsProducto productoModificado = new clsProducto(codigo, nombre, descripcion, precio, stock, categoria);
+            listaProductos.ModificarProducto(productoModificado);
+            listaProductos.GuardarDatos();
+            listaProductos.CargarGrilla(dgvDatos);
+
+            MessageBox.Show("Producto modificado correctamente.", "Modificación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            FormatearCampos();
+        }
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtCodigo.Text) || !int.TryParse(txtCodigo.Text, out int codigo))
+            {
+                MessageBox.Show("Selecciona un producto válido para eliminar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            DialogResult confirmacion = MessageBox.Show(
+                "¿Estás seguro de que deseas eliminar este producto?",
+                "Confirmar eliminación",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (confirmacion == DialogResult.Yes)
+            {
+                listaProductos.EliminarProducto(codigo);
+                listaProductos.GuardarDatos();
+                listaProductos.CargarGrilla(dgvDatos);
+
+                MessageBox.Show("Producto eliminado correctamente.", "Eliminación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                txtCodigo.Clear();
+                txtNombre.Clear();
+                txtDescripcion.Clear();
+                txtPrecio.Clear();
+                cmbCategoria.SelectedIndex = -1;
+                txtStock.Clear();
+            }
+        }
+        private void FormatearCampos()
+        {
+            txtCodigo.Clear();
+            txtNombre.Clear();
+            txtDescripcion.Clear();
+            txtPrecio.Clear();
+            cmbCategoria.SelectedIndex = -1;
+            txtStock.Clear();
         }
     }
 }
