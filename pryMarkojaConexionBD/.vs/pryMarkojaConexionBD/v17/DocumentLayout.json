@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\Seba\\weas\\Documentso\\Estudios\\IES\\semestre3\\lab3\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4E4E43D6-40C5-47B1-A79C-2D9545F3A2DE}|pryMarkojaConexionBD\\pryMarkojaConexionBD.csproj|D:\\Seba\\weas\\Documentso\\Estudios\\IES\\semestre3\\lab3\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\prymarkojaconexionbd\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4E4E43D6-40C5-47B1-A79C-2D9545F3A2DE}|pryMarkojaConexionBD\\pryMarkojaConexionBD.csproj|d:\\seba\\weas\\documentso\\estudios\\ies\\semestre3\\lab3\\prymarkojaconexionbd\\prymarkojaconexionbd\\prymarkojaconexionbd\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E4E43D6-40C5-47B1-A79C-2D9545F3A2DE}|pryMarkojaConexionBD\\pryMarkojaConexionBD.csproj|solutionrelative:prymarkojaconexionbd\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E4E43D6-40C5-47B1-A79C-2D9545F3A2DE}|pryMarkojaConexionBD\\pryMarkojaConexionBD.csproj|d:\\seba\\weas\\documentso\\estudios\\ies\\semestre3\\lab3\\prymarkojaconexionbd\\prymarkojaconexionbd\\prymarkojaconexionbd\\clslistaproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E4E43D6-40C5-47B1-A79C-2D9545F3A2DE}|pryMarkojaConexionBD\\pryMarkojaConexionBD.csproj|solutionrelative:prymarkojaconexionbd\\clslistaproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E4E43D6-40C5-47B1-A79C-2D9545F3A2DE}|pryMarkojaConexionBD\\pryMarkojaConexionBD.csproj|D:\\Seba\\weas\\Documentso\\Estudios\\IES\\semestre3\\lab3\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\prymarkojaconexionbd\\clsbdconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E4E43D6-40C5-47B1-A79C-2D9545F3A2DE}|pryMarkojaConexionBD\\pryMarkojaConexionBD.csproj|solutionrelative:prymarkojaconexionbd\\clsbdconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E43D6-40C5-47B1-A79C-2D9545F3A2DE}|pryMarkojaConexionBD\\pryMarkojaConexionBD.csproj|D:\\Seba\\weas\\Documentso\\Estudios\\IES\\semestre3\\lab3\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\prymarkojaconexionbd\\clslistaproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E4E43D6-40C5-47B1-A79C-2D9545F3A2DE}|pryMarkojaConexionBD\\pryMarkojaConexionBD.csproj|solutionrelative:prymarkojaconexionbd\\clslistaproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E4E43D6-40C5-47B1-A79C-2D9545F3A2DE}|pryMarkojaConexionBD\\pryMarkojaConexionBD.csproj|D:\\Seba\\weas\\Documentso\\Estudios\\IES\\semestre3\\lab3\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\prymarkojaconexionbd\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -54,12 +54,11 @@
               "RelativeToolTip": "pryMarkojaConexionBD\\clsProducto.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T23:59:17.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T23:59:17.218Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "clsListaProductos.cs",
               "DocumentMoniker": "D:\\Seba\\weas\\Documentso\\Estudios\\IES\\semestre3\\lab3\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\clsListaProductos.cs",
               "RelativeDocumentMoniker": "pryMarkojaConexionBD\\clsListaProductos.cs",
@@ -72,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "clsBDConexion.cs",
               "DocumentMoniker": "D:\\Seba\\weas\\Documentso\\Estudios\\IES\\semestre3\\lab3\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\clsBDConexion.cs",
               "RelativeDocumentMoniker": "pryMarkojaConexionBD\\clsBDConexion.cs",
@@ -91,7 +90,7 @@
               "RelativeDocumentMoniker": "pryMarkojaConexionBD\\frmMenu.cs",
               "ToolTip": "D:\\Seba\\weas\\Documentso\\Estudios\\IES\\semestre3\\lab3\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\frmMenu.cs",
               "RelativeToolTip": "pryMarkojaConexionBD\\frmMenu.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwCwAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAIIAAAAAAAAAAAA7wMoAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-30T18:48:16.163Z",
               "EditorCaption": ""

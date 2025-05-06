@@ -36,7 +36,6 @@
             this.lblStock = new System.Windows.Forms.Label();
             this.txtStock = new System.Windows.Forms.TextBox();
             this.lblCategoria = new System.Windows.Forms.Label();
-            this.txtCategoria = new System.Windows.Forms.TextBox();
             this.lblPrecio = new System.Windows.Forms.Label();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.lblDescripcion = new System.Windows.Forms.Label();
@@ -50,6 +49,7 @@
             this.btnCargar = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.cmbCategoria = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,14 +126,6 @@
             this.lblCategoria.Size = new System.Drawing.Size(66, 16);
             this.lblCategoria.TabIndex = 34;
             this.lblCategoria.Text = "Categoría";
-            // 
-            // txtCategoria
-            // 
-            this.txtCategoria.Location = new System.Drawing.Point(322, 426);
-            this.txtCategoria.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCategoria.Name = "txtCategoria";
-            this.txtCategoria.Size = new System.Drawing.Size(132, 22);
-            this.txtCategoria.TabIndex = 4;
             // 
             // lblPrecio
             // 
@@ -218,6 +210,7 @@
             this.dgvDatos.RowHeadersWidth = 51;
             this.dgvDatos.Size = new System.Drawing.Size(1011, 465);
             this.dgvDatos.TabIndex = 24;
+            this.dgvDatos.SelectionChanged += new System.EventHandler(this.dgvDatos_SelectionChanged);
             // 
             // txtNombre
             // 
@@ -259,11 +252,21 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // cmbCategoria
+            // 
+            this.cmbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCategoria.FormattingEnabled = true;
+            this.cmbCategoria.Location = new System.Drawing.Point(322, 425);
+            this.cmbCategoria.Name = "cmbCategoria";
+            this.cmbCategoria.Size = new System.Drawing.Size(132, 24);
+            this.cmbCategoria.TabIndex = 43;
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1902, 927);
+            this.Controls.Add(this.cmbCategoria);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.lblCodigoModificar);
             this.Controls.Add(this.txtModificar);
@@ -273,7 +276,6 @@
             this.Controls.Add(this.lblStock);
             this.Controls.Add(this.txtStock);
             this.Controls.Add(this.lblCategoria);
-            this.Controls.Add(this.txtCategoria);
             this.Controls.Add(this.lblPrecio);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.lblDescripcion);
@@ -306,7 +308,6 @@
         private System.Windows.Forms.Label lblStock;
         private System.Windows.Forms.TextBox txtStock;
         private System.Windows.Forms.Label lblCategoria;
-        private System.Windows.Forms.TextBox txtCategoria;
         private System.Windows.Forms.Label lblPrecio;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.Label lblDescripcion;
@@ -320,6 +321,7 @@
         private System.Windows.Forms.Button btnCargar;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.ComboBox cmbCategoria;
     }
 }
 

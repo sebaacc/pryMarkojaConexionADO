@@ -17,19 +17,23 @@ namespace pryMarkojaConexionBD
             InitializeComponent();
         }
 
-        int codigo;
-        String nombre;
-        String descripcion;
-        String categoria;
-        decimal precio;
-        int stock;
         clsListaProductos listaProductos = new clsListaProductos();
-
+        List<string> categorias = new List<string>() {
+            "Alimentos",
+            "Electrónicos",
+            "Bazar/Librería",
+            "Limpieza",
+            "Perfumes",
+            "Indumentaria",
+            "Hogar",
+            "Juguetería",
+            "Automotor"
+        };
         private void frm_menu_Load(object sender, EventArgs e)
         {
             try
             {
-                clsBDConexion.ProbarConexion(); 
+                clsBDConexion.ProbarConexion();
                 listaProductos.productos = clsBDConexion.CargarListaProductos();
 
                 listaProductos.CargarGrilla(dgvDatos);
@@ -40,6 +44,11 @@ namespace pryMarkojaConexionBD
                 dgvDatos.Columns["stock"].HeaderText = "Stock";
                 dgvDatos.Columns["categoria"].HeaderText = "Categoría";
                 dgvDatos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+                dgvDatos.ReadOnly = true;
+                foreach (string categoria in categorias)
+                {
+                    cmbCategoria.Items.Add(categoria);
+                }
             }
             catch (Exception ex)
             {
@@ -58,7 +67,7 @@ namespace pryMarkojaConexionBD
                 string.IsNullOrWhiteSpace(txtNombre.Text) ||
                 string.IsNullOrWhiteSpace(txtDescripcion.Text) ||
                 string.IsNullOrWhiteSpace(txtPrecio.Text) ||
-                string.IsNullOrWhiteSpace(txtCategoria.Text) ||
+                string.IsNullOrWhiteSpace(cmbCategoria.Text) ||
                 string.IsNullOrWhiteSpace(txtStock.Text))
             {
                 MessageBox.Show("Por favor, completa todos los campos.", "Campos incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -86,7 +95,7 @@ namespace pryMarkojaConexionBD
                 }
 
                 // Verifica si el producto ya existe
-                var productoExistente = listaProductos.BuscarProducto(codigo);
+                clsProducto productoExistente = listaProductos.BuscarProducto(codigo);
                 if (productoExistente != null)
                 {
                     MessageBox.Show("Ya existe un producto con ese código.", "Producto duplicado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -95,17 +104,17 @@ namespace pryMarkojaConexionBD
 
                 string nombre = txtNombre.Text.Trim();
                 string descripcion = txtDescripcion.Text.Trim();
-                string categoria = txtCategoria.Text.Trim();
+                string categoria = cmbCategoria.Text.Trim();
 
                 listaProductos.CargarProducto(codigo, nombre, descripcion, precio, stock, categoria);
                 listaProductos.GuardarDatos(); // Se guarda el dato en la bd.
                 listaProductos.CargarGrilla(dgvDatos); // Se muestra la dgv actualizada.
-                
+
                 txtCodigo.Clear();
                 txtNombre.Clear();
                 txtDescripcion.Clear();
                 txtPrecio.Clear();
-                txtCategoria.Clear();
+                cmbCategoria.SelectedIndex = -1;
                 txtStock.Clear();
             }
             catch (Exception ex)
@@ -124,9 +133,80 @@ namespace pryMarkojaConexionBD
             try
             {
                 CargarProducto();
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show("Ocurrió un error" + ex);
+            }
+        }
+
+        private void dgvDatos_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvDatos.SelectedRows.Count > 0)
+            {
+                DataGridViewRow filaSeleccionada = dgvDatos.SelectedRows[0];
+
+                if (filaSeleccionada.Cells.Count > 0)
+                {
+                    if (filaSeleccionada.Cells[0].Value != null)
+                    {
+                        txtCodigo.Text = filaSeleccionada.Cells[0].Value.ToString();
+                    }
+                    else
+                    {
+                        txtCodigo.Text = "";
+                    }
+
+                    if (filaSeleccionada.Cells[1].Value != null)
+                    {
+                        txtNombre.Text = filaSeleccionada.Cells[1].Value.ToString();
+                    }
+                    else
+                    {
+                        txtNombre.Text = "";
+                    }
+                    if (filaSeleccionada.Cells[2].Value != null)
+                    {
+                        txtDescripcion.Text = filaSeleccionada.Cells[2].Value.ToString();
+                    }
+                    else
+                    {
+                        txtDescripcion.Text = "";
+                    }
+                    if (filaSeleccionada.Cells[3].Value != null)
+                    {
+                        txtPrecio.Text = filaSeleccionada.Cells[3].Value.ToString();
+                    }
+                    else
+                    {
+                        txtPrecio.Text = "";
+                    }
+                    if (filaSeleccionada.Cells[4].Value != null)
+                    {
+                        txtStock.Text = filaSeleccionada.Cells[4].Value.ToString();
+                    }
+                    else
+                    {
+                        txtStock.Text = "";
+                    }
+                    if (filaSeleccionada.Cells[5].Value != null)
+                    {
+                        string categoriaSeleccionada = filaSeleccionada.Cells[5].Value.ToString();
+                        if (cmbCategoria.Items.Contains(categoriaSeleccionada))
+                        {
+                            cmbCategoria.SelectedItem = categoriaSeleccionada;
+                        }
+                        else
+                        {
+                            cmbCategoria.SelectedIndex = -1;
+                        }
+                    }
+                    else
+                    {
+                        cmbCategoria.SelectedIndex = -1;
+                    }
+
+                }
             }
         }
     }
