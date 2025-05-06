@@ -1,22 +1,25 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace pryMarkojaConexionBD
 {
     public class clsBDConexion
     {
-        private const string ConnectionString = "Server=localhost;Database=Tienda;Trusted_Connection=True;";
+        private const string conexionString = "Server=localhost;Database=Tienda;Trusted_Connection=True;";
+        private SqlConnection conexionBD;
         public static bool ProbarConexion()
         {
-            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            using (SqlConnection conexionBD = new SqlConnection(conexionString))
             {
                 try
                 {
-                    string nombreBaseDeDatos = connection.Database;
-                    connection.Open();
+                    string nombreBaseDeDatos = conexionBD.Database;
+                    conexionBD.Open();
                     MessageBox.Show("✅ Conexión exitosa a la base de datos: " + nombreBaseDeDatos);
                     return true;
                 }
@@ -32,40 +35,119 @@ namespace pryMarkojaConexionBD
                 }
             }
         }
-        public static List<clsProducto> BuscarProductos()
+        public static BindingList<clsProducto> CargarListaProductos()
         {
-            List<clsProducto> productos = new List<clsProducto>();
+            BindingList<clsProducto> productos = new BindingList<clsProducto>();
             string query = "SELECT * FROM Productos";
-            SqlConnection connection = new SqlConnection(ConnectionString);
-            SqlCommand command = new SqlCommand(query, connection);
-            connection.Open();
-            using (SqlDataReader reader = command.ExecuteReader())
+
+            try
             {
-                try
+                using (SqlConnection connection = new SqlConnection(conexionString))
                 {
-                    
-                    while (reader.Read())
+                    connection.Open();
+                    using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        clsProducto producto = new clsProducto
+                        using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            codigo = Convert.ToInt32(reader["Codigo"].ToString()),
-                            nombre = reader["Nombre"].ToString(),
-                            descripcion = reader["Descripcion"].ToString(),
-                            precio = Convert.ToDecimal(reader["Precio"].ToString()),
-                            stock = Convert.ToInt32(reader["Stock"].ToString()),
-                            categoria = reader["Categoria"].ToString()
-                        };
-                        productos.Add(producto);
+                            while (reader.Read())
+                            {
+                                int codigo = Convert.ToInt32(reader["Codigo"].ToString());
+                                string nombre = reader["Nombre"].ToString();
+                                string descripcion = reader["Descripcion"].ToString();
+                                decimal precio = Convert.ToDecimal(reader["Precio"].ToString());
+                                int stock = Convert.ToInt32(reader["Stock"].ToString());
+                                string categoria = reader["Categoria"].ToString();
+                                clsProducto producto = new clsProducto(codigo, nombre, descripcion, precio, stock, categoria);
+                                productos.Add(producto);
+                            }
+                        }
                     }
-                    
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"❌ Error inesperado al buscar productos: {ex.Message}\n\nDetalles:\n{ex.StackTrace}");
                 }
             }
-            connection.Close();
+            catch (Exception ex)
+            {
+                MessageBox.Show($"❌ Error inesperado al buscar productos: {ex.Message}\n\nDetalles:\n{ex.StackTrace}");
+            }
             return productos;
+        }
+        public void AgregarProducto(clsProducto producto)
+        {
+            try
+            {
+                using (SqlConnection conexionBD = new SqlConnection(conexionString))
+                {
+                    conexionBD.Open();
+
+                    string insertQuery = "INSERT INTO Productos (Codigo, Nombre, Descripcion, Precio, Stock, Categoria) VALUES " +
+                                         "(@codigo, @nombre, @descripcion, @precio, @stock, @categoria)";
+
+                    using (SqlCommand comando = new SqlCommand(insertQuery, conexionBD))
+                    {
+                        comando.Parameters.AddWithValue("@codigo", producto.codigo);
+                        comando.Parameters.AddWithValue("@nombre", producto.nombre);
+                        comando.Parameters.AddWithValue("@descripcion", producto.descripcion);
+                        comando.Parameters.AddWithValue("@precio", producto.precio);
+                        comando.Parameters.AddWithValue("@stock", producto.stock);
+                        comando.Parameters.AddWithValue("@categoria", producto.categoria);
+
+                        comando.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        public void ActualizarProducto(clsProducto producto)
+        {
+            try
+            {
+                using (SqlConnection conexionBD = new SqlConnection(conexionString))
+                {
+                    conexionBD.Open();
+                    string nombreBaseDeDatos = conexionBD.Database;
+
+                    string actualizarProdQuery = "UPDATE Productos SET Nombre = @nombre, Descripcion = @descripcion, " +
+                                         "Precio = @precio, Stock = @stock, Categoria = @categoria WHERE Codigo = @codigo";
+
+                    using (SqlCommand comando = new SqlCommand(actualizarProdQuery, conexionBD))
+                    {
+                        comando.Parameters.AddWithValue("@codigo", producto.codigo);
+                        comando.Parameters.AddWithValue("@nombre", producto.nombre);
+                        comando.Parameters.AddWithValue("@descripcion", producto.descripcion);
+                        comando.Parameters.AddWithValue("@precio", producto.precio);
+                        comando.Parameters.AddWithValue("@stock", producto.stock);
+                        comando.Parameters.AddWithValue("@categoria", producto.categoria);
+
+                        comando.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        public void EliminarProducto(int codigo)
+        {
+            try
+            {
+                using (SqlConnection conexionBD = new SqlConnection("conexionString"))
+                {
+                    conexionBD.Open();
+                    string eliminarProdQuery = "DELETE FROM Productos WHERE Codigo = @codigo";
+                    using (SqlCommand comando = new SqlCommand(eliminarProdQuery, conexionBD))
+                    {
+                        comando.Parameters.AddWithValue("@codigo", codigo);
+                        comando.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

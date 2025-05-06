@@ -14,5 +14,15 @@ namespace pryMarkojaConexionBD
         public decimal precio { get; set; }
         public int stock { get; set; }
         public string categoria { get; set; }
+
+        public clsProducto(int cod, string nom, string desc, decimal prec, int stk, string cat)
+        {
+            this.codigo = cod;
+            this.nombre = nom;
+            this.descripcion = desc;
+            this.precio = prec;
+            this.stock = stk;
+            this.categoria = cat;
+        }
     }
 }

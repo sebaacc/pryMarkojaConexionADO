@@ -69,7 +69,7 @@
             this.txtModificar.Margin = new System.Windows.Forms.Padding(4);
             this.txtModificar.Name = "txtModificar";
             this.txtModificar.Size = new System.Drawing.Size(191, 22);
-            this.txtModificar.TabIndex = 40;
+            this.txtModificar.TabIndex = 7;
             // 
             // btnModificar
             // 
@@ -77,7 +77,7 @@
             this.btnModificar.Margin = new System.Windows.Forms.Padding(4);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(100, 28);
-            this.btnModificar.TabIndex = 39;
+            this.btnModificar.TabIndex = 8;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
             // 
@@ -97,7 +97,7 @@
             this.txtCodigoEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigoEliminar.Name = "txtCodigoEliminar";
             this.txtCodigoEliminar.Size = new System.Drawing.Size(191, 22);
-            this.txtCodigoEliminar.TabIndex = 37;
+            this.txtCodigoEliminar.TabIndex = 9;
             // 
             // lblStock
             // 
@@ -115,7 +115,7 @@
             this.txtStock.Margin = new System.Windows.Forms.Padding(4);
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(132, 22);
-            this.txtStock.TabIndex = 35;
+            this.txtStock.TabIndex = 5;
             // 
             // lblCategoria
             // 
@@ -133,7 +133,7 @@
             this.txtCategoria.Margin = new System.Windows.Forms.Padding(4);
             this.txtCategoria.Name = "txtCategoria";
             this.txtCategoria.Size = new System.Drawing.Size(132, 22);
-            this.txtCategoria.TabIndex = 33;
+            this.txtCategoria.TabIndex = 4;
             // 
             // lblPrecio
             // 
@@ -151,7 +151,7 @@
             this.txtPrecio.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(132, 22);
-            this.txtPrecio.TabIndex = 31;
+            this.txtPrecio.TabIndex = 3;
             // 
             // lblDescripcion
             // 
@@ -169,7 +169,7 @@
             this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(132, 22);
-            this.txtDescripcion.TabIndex = 29;
+            this.txtDescripcion.TabIndex = 2;
             // 
             // lblCodigo
             // 
@@ -187,7 +187,7 @@
             this.txtCodigo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(132, 22);
-            this.txtCodigo.TabIndex = 27;
+            this.txtCodigo.TabIndex = 0;
             // 
             // lblNombre
             // 
@@ -205,7 +205,7 @@
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(100, 28);
-            this.btnEliminar.TabIndex = 25;
+            this.btnEliminar.TabIndex = 10;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
             // 
@@ -225,7 +225,7 @@
             this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(132, 22);
-            this.txtNombre.TabIndex = 23;
+            this.txtNombre.TabIndex = 1;
             // 
             // btnCargar
             // 
@@ -233,7 +233,7 @@
             this.btnCargar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(133, 28);
-            this.btnCargar.TabIndex = 22;
+            this.btnCargar.TabIndex = 6;
             this.btnCargar.Text = "Cargar";
             this.btnCargar.UseVisualStyleBackColor = true;
             this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
@@ -245,9 +245,9 @@
             this.lblTitulo.Location = new System.Drawing.Point(317, 77);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(233, 29);
+            this.lblTitulo.Size = new System.Drawing.Size(454, 29);
             this.lblTitulo.TabIndex = 21;
-            this.lblTitulo.Text = "ABM de tu negocio";
+            this.lblTitulo.Text = "¡Te damos la bienvenida ABM Master!";
             // 
             // btnSalir
             // 
