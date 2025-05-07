@@ -133,7 +133,7 @@ namespace pryMarkojaConexionBD
         {
             try
             {
-                using (SqlConnection conexionBD = new SqlConnection("conexionString"))
+                using (SqlConnection conexionBD = new SqlConnection(conexionString))
                 {
                     conexionBD.Open();
                     string eliminarProdQuery = "DELETE FROM Productos WHERE Codigo = @codigo";
