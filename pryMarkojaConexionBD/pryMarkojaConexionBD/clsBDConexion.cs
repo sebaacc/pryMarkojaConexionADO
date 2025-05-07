@@ -11,7 +11,6 @@ namespace pryMarkojaConexionBD
     public class clsBDConexion
     {
         private const string conexionString = "Server=localhost;Database=Tienda;Trusted_Connection=True;";
-        private SqlConnection conexionBD;
         public static bool ProbarConexion()
         {
             using (SqlConnection conexionBD = new SqlConnection(conexionString))

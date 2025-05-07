@@ -31,9 +31,10 @@ namespace pryMarkojaConexionBD
         };
         private void frm_menu_Load(object sender, EventArgs e)
         {
+
             try
             {
-                clsBDConexion.ProbarConexion();
+                //clsBDConexion.ProbarConexion();
                 listaProductos.productos = clsBDConexion.CargarListaProductos();
 
                 listaProductos.CargarGrilla(dgvDatos);
@@ -120,7 +121,7 @@ namespace pryMarkojaConexionBD
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void btnCargar_Click(object sender, EventArgs e)

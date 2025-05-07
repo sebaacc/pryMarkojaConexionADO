@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
             this.btnModificar = new System.Windows.Forms.Button();
             this.lblStock = new System.Windows.Forms.Label();
             this.txtStock = new System.Windows.Forms.TextBox();
@@ -49,9 +50,15 @@
             this.gbProducto = new System.Windows.Forms.GroupBox();
             this.gbModificarYEliminar = new System.Windows.Forms.GroupBox();
             this.lblInstruccion = new System.Windows.Forms.Label();
+            this.pbLogoABM = new System.Windows.Forms.PictureBox();
+            this.tlpCentrador = new System.Windows.Forms.TableLayoutPanel();
+            this.panElementos = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.gbProducto.SuspendLayout();
             this.gbModificarYEliminar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogoABM)).BeginInit();
+            this.tlpCentrador.SuspendLayout();
+            this.panElementos.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnModificar
@@ -60,7 +67,7 @@
             this.btnModificar.Location = new System.Drawing.Point(77, 58);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(4);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(132, 28);
+            this.btnModificar.Size = new System.Drawing.Size(132, 30);
             this.btnModificar.TabIndex = 8;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = false;
@@ -69,7 +76,7 @@
             // lblStock
             // 
             this.lblStock.AutoSize = true;
-            this.lblStock.Location = new System.Drawing.Point(285, 203);
+            this.lblStock.Location = new System.Drawing.Point(289, 203);
             this.lblStock.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStock.Name = "lblStock";
             this.lblStock.Size = new System.Drawing.Size(41, 16);
@@ -87,7 +94,7 @@
             // lblCategoria
             // 
             this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Location = new System.Drawing.Point(37, 201);
+            this.lblCategoria.Location = new System.Drawing.Point(41, 201);
             this.lblCategoria.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(66, 16);
@@ -97,7 +104,7 @@
             // lblPrecio
             // 
             this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Location = new System.Drawing.Point(285, 114);
+            this.lblPrecio.Location = new System.Drawing.Point(289, 114);
             this.lblPrecio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Size = new System.Drawing.Size(46, 16);
@@ -115,7 +122,7 @@
             // lblDescripcion
             // 
             this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(35, 113);
+            this.lblDescripcion.Location = new System.Drawing.Point(40, 113);
             this.lblDescripcion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(79, 16);
@@ -138,12 +145,12 @@
             this.lblCodigo.Name = "lblCodigo";
             this.lblCodigo.Size = new System.Drawing.Size(51, 16);
             this.lblCodigo.TabIndex = 28;
-            this.lblCodigo.Text = "Codigo";
+            this.lblCodigo.Text = "Código";
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(284, 29);
+            this.lblNombre.Location = new System.Drawing.Point(289, 29);
             this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(56, 16);
@@ -156,7 +163,7 @@
             this.btnEliminar.Location = new System.Drawing.Point(288, 58);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(132, 28);
+            this.btnEliminar.Size = new System.Drawing.Size(132, 30);
             this.btnEliminar.TabIndex = 10;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -165,7 +172,7 @@
             // dgvDatos
             // 
             this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDatos.Location = new System.Drawing.Point(680, 151);
+            this.dgvDatos.Location = new System.Drawing.Point(626, 104);
             this.dgvDatos.Margin = new System.Windows.Forms.Padding(4);
             this.dgvDatos.Name = "dgvDatos";
             this.dgvDatos.RowHeadersWidth = 51;
@@ -184,10 +191,10 @@
             // btnCargar
             // 
             this.btnCargar.BackColor = System.Drawing.Color.PaleGreen;
-            this.btnCargar.Location = new System.Drawing.Point(183, 288);
+            this.btnCargar.Location = new System.Drawing.Point(182, 287);
             this.btnCargar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCargar.Name = "btnCargar";
-            this.btnCargar.Size = new System.Drawing.Size(132, 28);
+            this.btnCargar.Size = new System.Drawing.Size(132, 30);
             this.btnCargar.TabIndex = 6;
             this.btnCargar.Text = "Cargar";
             this.btnCargar.UseVisualStyleBackColor = false;
@@ -197,7 +204,7 @@
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(168, 36);
+            this.lblTitulo.Location = new System.Drawing.Point(78, 16);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(454, 29);
@@ -206,12 +213,13 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(1754, 867);
+            this.btnSalir.BackColor = System.Drawing.Color.Salmon;
+            this.btnSalir.Location = new System.Drawing.Point(1669, 790);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.Size = new System.Drawing.Size(95, 30);
             this.btnSalir.TabIndex = 42;
             this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // cmbCategoria
@@ -246,7 +254,7 @@
             this.gbProducto.Controls.Add(this.lblStock);
             this.gbProducto.Controls.Add(this.lblPrecio);
             this.gbProducto.Controls.Add(this.lblCategoria);
-            this.gbProducto.Location = new System.Drawing.Point(137, 151);
+            this.gbProducto.Location = new System.Drawing.Point(83, 104);
             this.gbProducto.Name = "gbProducto";
             this.gbProducto.Size = new System.Drawing.Size(504, 347);
             this.gbProducto.TabIndex = 44;
@@ -258,7 +266,7 @@
             this.gbModificarYEliminar.Controls.Add(this.lblInstruccion);
             this.gbModificarYEliminar.Controls.Add(this.btnModificar);
             this.gbModificarYEliminar.Controls.Add(this.btnEliminar);
-            this.gbModificarYEliminar.Location = new System.Drawing.Point(137, 504);
+            this.gbModificarYEliminar.Location = new System.Drawing.Point(83, 457);
             this.gbModificarYEliminar.Name = "gbModificarYEliminar";
             this.gbModificarYEliminar.Size = new System.Drawing.Size(504, 112);
             this.gbModificarYEliminar.TabIndex = 45;
@@ -270,20 +278,54 @@
             this.lblInstruccion.AutoSize = true;
             this.lblInstruccion.Location = new System.Drawing.Point(17, 28);
             this.lblInstruccion.Name = "lblInstruccion";
-            this.lblInstruccion.Size = new System.Drawing.Size(469, 16);
+            this.lblInstruccion.Size = new System.Drawing.Size(472, 16);
             this.lblInstruccion.TabIndex = 11;
-            this.lblInstruccion.Text = "Usted puede seleccionar un producto desde la grilla para modificar o eliminar";
+            this.lblInstruccion.Text = "Usted puede seleccionar un producto desde la grilla para modificar o eliminar.";
+            // 
+            // pbLogoABM
+            // 
+            this.pbLogoABM.Image = global::pryMarkojaConexionBD.Properties.Resources.FreePik_abm;
+            this.pbLogoABM.Location = new System.Drawing.Point(1679, 16);
+            this.pbLogoABM.Name = "pbLogoABM";
+            this.pbLogoABM.Size = new System.Drawing.Size(85, 69);
+            this.pbLogoABM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLogoABM.TabIndex = 46;
+            this.pbLogoABM.TabStop = false;
+            // 
+            // tlpCentrador
+            // 
+            this.tlpCentrador.ColumnCount = 1;
+            this.tlpCentrador.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpCentrador.Controls.Add(this.panElementos, 0, 0);
+            this.tlpCentrador.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlpCentrador.Location = new System.Drawing.Point(0, 0);
+            this.tlpCentrador.Name = "tlpCentrador";
+            this.tlpCentrador.RowCount = 1;
+            this.tlpCentrador.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpCentrador.Size = new System.Drawing.Size(1902, 927);
+            this.tlpCentrador.TabIndex = 47;
+            // 
+            // panElementos
+            // 
+            this.panElementos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panElementos.Controls.Add(this.lblTitulo);
+            this.panElementos.Controls.Add(this.pbLogoABM);
+            this.panElementos.Controls.Add(this.dgvDatos);
+            this.panElementos.Controls.Add(this.gbModificarYEliminar);
+            this.panElementos.Controls.Add(this.btnSalir);
+            this.panElementos.Controls.Add(this.gbProducto);
+            this.panElementos.Location = new System.Drawing.Point(56, 45);
+            this.panElementos.Name = "panElementos";
+            this.panElementos.Size = new System.Drawing.Size(1790, 837);
+            this.panElementos.TabIndex = 48;
             // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1902, 927);
-            this.Controls.Add(this.gbModificarYEliminar);
-            this.Controls.Add(this.gbProducto);
-            this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.dgvDatos);
-            this.Controls.Add(this.lblTitulo);
+            this.Controls.Add(this.tlpCentrador);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMenu";
             this.Text = "ABM Master";
@@ -294,8 +336,11 @@
             this.gbProducto.PerformLayout();
             this.gbModificarYEliminar.ResumeLayout(false);
             this.gbModificarYEliminar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogoABM)).EndInit();
+            this.tlpCentrador.ResumeLayout(false);
+            this.panElementos.ResumeLayout(false);
+            this.panElementos.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -321,6 +366,9 @@
         private System.Windows.Forms.GroupBox gbProducto;
         private System.Windows.Forms.GroupBox gbModificarYEliminar;
         private System.Windows.Forms.Label lblInstruccion;
+        private System.Windows.Forms.PictureBox pbLogoABM;
+        private System.Windows.Forms.TableLayoutPanel tlpCentrador;
+        private System.Windows.Forms.Panel panElementos;
     }
 }
 

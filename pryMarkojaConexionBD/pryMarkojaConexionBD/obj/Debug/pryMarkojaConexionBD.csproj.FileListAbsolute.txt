@@ -27,10 +27,10 @@ D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMark
 D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.csproj.AssemblyReference.cache
 D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.frmLogin.resources
 D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.frmMenu.resources
+D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.frmRegistroUsuario.resources
 D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.Properties.Resources.resources
 D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.csproj.GenerateResource.cache
 D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.csproj.CoreCompileInputs.cache
 D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarko.B1AFA623.Up2Date
 D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.exe
 D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.pdb
-D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.frmRegistroUsuario.resources

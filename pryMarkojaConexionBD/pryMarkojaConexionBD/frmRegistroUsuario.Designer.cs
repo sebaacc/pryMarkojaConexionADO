@@ -28,70 +28,113 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegistroUsuario));
             this.lblUsuario = new System.Windows.Forms.Label();
             this.txtNuevoUsuario = new System.Windows.Forms.TextBox();
             this.txtNuevaContraseña = new System.Windows.Forms.TextBox();
             this.lblContraseña = new System.Windows.Forms.Label();
             this.btnRegistrar = new System.Windows.Forms.Button();
+            this.lblRegistroInvitacion = new System.Windows.Forms.Label();
+            this.tlpCentrador = new System.Windows.Forms.TableLayoutPanel();
+            this.panElementos = new System.Windows.Forms.Panel();
+            this.tlpCentrador.SuspendLayout();
+            this.panElementos.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(316, 77);
+            this.lblUsuario.Location = new System.Drawing.Point(127, 116);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(44, 16);
+            this.lblUsuario.Size = new System.Drawing.Size(54, 16);
             this.lblUsuario.TabIndex = 0;
-            this.lblUsuario.Text = "label1";
+            this.lblUsuario.Text = "Usuario";
             // 
             // txtNuevoUsuario
             // 
-            this.txtNuevoUsuario.Location = new System.Drawing.Point(319, 110);
+            this.txtNuevoUsuario.Location = new System.Drawing.Point(127, 143);
             this.txtNuevoUsuario.Name = "txtNuevoUsuario";
-            this.txtNuevoUsuario.Size = new System.Drawing.Size(100, 22);
+            this.txtNuevoUsuario.Size = new System.Drawing.Size(287, 22);
             this.txtNuevoUsuario.TabIndex = 1;
             // 
             // txtNuevaContraseña
             // 
-            this.txtNuevaContraseña.Location = new System.Drawing.Point(319, 210);
+            this.txtNuevaContraseña.Location = new System.Drawing.Point(127, 235);
             this.txtNuevaContraseña.Name = "txtNuevaContraseña";
-            this.txtNuevaContraseña.Size = new System.Drawing.Size(100, 22);
+            this.txtNuevaContraseña.PasswordChar = '*';
+            this.txtNuevaContraseña.Size = new System.Drawing.Size(287, 22);
             this.txtNuevaContraseña.TabIndex = 3;
-            this.txtNuevaContraseña.Text = "*";
             // 
             // lblContraseña
             // 
             this.lblContraseña.AutoSize = true;
-            this.lblContraseña.Location = new System.Drawing.Point(316, 177);
+            this.lblContraseña.Location = new System.Drawing.Point(127, 207);
             this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(44, 16);
+            this.lblContraseña.Size = new System.Drawing.Size(76, 16);
             this.lblContraseña.TabIndex = 2;
-            this.lblContraseña.Text = "label1";
+            this.lblContraseña.Text = "Contraseña";
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(319, 281);
+            this.btnRegistrar.Location = new System.Drawing.Point(176, 294);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(100, 39);
+            this.btnRegistrar.Size = new System.Drawing.Size(188, 39);
             this.btnRegistrar.TabIndex = 4;
             this.btnRegistrar.Text = "Registrarme";
             this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
+            // 
+            // lblRegistroInvitacion
+            // 
+            this.lblRegistroInvitacion.AutoSize = true;
+            this.lblRegistroInvitacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegistroInvitacion.Location = new System.Drawing.Point(55, 36);
+            this.lblRegistroInvitacion.Name = "lblRegistroInvitacion";
+            this.lblRegistroInvitacion.Size = new System.Drawing.Size(445, 25);
+            this.lblRegistroInvitacion.TabIndex = 5;
+            this.lblRegistroInvitacion.Text = "Registrate para poder acceder a ABM Master";
+            // 
+            // tlpCentrador
+            // 
+            this.tlpCentrador.ColumnCount = 1;
+            this.tlpCentrador.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpCentrador.Controls.Add(this.panElementos, 0, 0);
+            this.tlpCentrador.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tlpCentrador.Location = new System.Drawing.Point(0, 0);
+            this.tlpCentrador.Name = "tlpCentrador";
+            this.tlpCentrador.RowCount = 1;
+            this.tlpCentrador.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpCentrador.Size = new System.Drawing.Size(875, 450);
+            this.tlpCentrador.TabIndex = 6;
+            // 
+            // panElementos
+            // 
+            this.panElementos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panElementos.Controls.Add(this.lblRegistroInvitacion);
+            this.panElementos.Controls.Add(this.btnRegistrar);
+            this.panElementos.Controls.Add(this.lblUsuario);
+            this.panElementos.Controls.Add(this.txtNuevaContraseña);
+            this.panElementos.Controls.Add(this.txtNuevoUsuario);
+            this.panElementos.Controls.Add(this.lblContraseña);
+            this.panElementos.Location = new System.Drawing.Point(162, 48);
+            this.panElementos.Name = "panElementos";
+            this.panElementos.Size = new System.Drawing.Size(550, 354);
+            this.panElementos.TabIndex = 8;
             // 
             // frmRegistroUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnRegistrar);
-            this.Controls.Add(this.txtNuevaContraseña);
-            this.Controls.Add(this.lblContraseña);
-            this.Controls.Add(this.txtNuevoUsuario);
-            this.Controls.Add(this.lblUsuario);
+            this.ClientSize = new System.Drawing.Size(875, 450);
+            this.Controls.Add(this.tlpCentrador);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmRegistroUsuario";
             this.Text = "frmRegistroUsuario";
             this.Load += new System.EventHandler(this.frmRegistroUsuario_Load);
+            this.tlpCentrador.ResumeLayout(false);
+            this.panElementos.ResumeLayout(false);
+            this.panElementos.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -102,5 +145,8 @@
         private System.Windows.Forms.TextBox txtNuevaContraseña;
         private System.Windows.Forms.Label lblContraseña;
         private System.Windows.Forms.Button btnRegistrar;
+        private System.Windows.Forms.Label lblRegistroInvitacion;
+        private System.Windows.Forms.TableLayoutPanel tlpCentrador;
+        private System.Windows.Forms.Panel panElementos;
     }
 }
