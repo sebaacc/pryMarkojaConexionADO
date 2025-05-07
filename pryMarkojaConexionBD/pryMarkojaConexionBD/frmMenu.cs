@@ -50,6 +50,7 @@ namespace pryMarkojaConexionBD
                 {
                     cmbCategoria.Items.Add(categoria);
                 }
+                FormatearCampos();
             }
             catch (Exception ex)
             {
@@ -280,6 +281,16 @@ namespace pryMarkojaConexionBD
             txtPrecio.Clear();
             cmbCategoria.SelectedIndex = -1;
             txtStock.Clear();
+        }
+
+        private void gbProducto_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            FormatearCampos();
         }
     }
 }

@@ -49,7 +49,7 @@
             // txtUsuario
             // 
             this.txtUsuario.Location = new System.Drawing.Point(80, 180);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(201, 20);
             this.txtUsuario.TabIndex = 0;
@@ -57,7 +57,7 @@
             // txtContraseña
             // 
             this.txtContraseña.Location = new System.Drawing.Point(80, 250);
-            this.txtContraseña.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtContraseña.Margin = new System.Windows.Forms.Padding(2);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '*';
             this.txtContraseña.Size = new System.Drawing.Size(201, 20);
@@ -66,8 +66,9 @@
             // 
             // btnLogin
             // 
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Location = new System.Drawing.Point(108, 353);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(141, 32);
             this.btnLogin.TabIndex = 2;
@@ -143,7 +144,7 @@
             // 
             this.pbLogoABM.Image = global::pryMarkojaConexionBD.Properties.Resources.FreePik_abm;
             this.pbLogoABM.Location = new System.Drawing.Point(147, 26);
-            this.pbLogoABM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbLogoABM.Margin = new System.Windows.Forms.Padding(2);
             this.pbLogoABM.Name = "pbLogoABM";
             this.pbLogoABM.Size = new System.Drawing.Size(64, 56);
             this.pbLogoABM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -157,7 +158,7 @@
             this.tlpCentrador.Controls.Add(this.panElementos, 0, 0);
             this.tlpCentrador.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpCentrador.Location = new System.Drawing.Point(0, 0);
-            this.tlpCentrador.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tlpCentrador.Margin = new System.Windows.Forms.Padding(2);
             this.tlpCentrador.Name = "tlpCentrador";
             this.tlpCentrador.RowCount = 1;
             this.tlpCentrador.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -187,7 +188,7 @@
             this.panElementos.Controls.Add(this.lblLinkRegistrarse);
             this.panElementos.Controls.Add(this.lblContraseña);
             this.panElementos.Location = new System.Drawing.Point(246, 40);
-            this.panElementos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panElementos.Margin = new System.Windows.Forms.Padding(2);
             this.panElementos.Name = "panElementos";
             this.panElementos.Size = new System.Drawing.Size(352, 424);
             this.panElementos.TabIndex = 0;
@@ -199,7 +200,7 @@
             this.ClientSize = new System.Drawing.Size(845, 505);
             this.Controls.Add(this.tlpCentrador);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login de ABM Master";

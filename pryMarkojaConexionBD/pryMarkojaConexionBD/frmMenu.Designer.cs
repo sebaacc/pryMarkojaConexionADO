@@ -54,6 +54,7 @@
             this.pbLogoABM = new System.Windows.Forms.PictureBox();
             this.tlpCentrador = new System.Windows.Forms.TableLayoutPanel();
             this.panElementos = new System.Windows.Forms.Panel();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.gbProducto.SuspendLayout();
             this.gbModificarYEliminar.SuspendLayout();
@@ -65,6 +66,7 @@
             // btnModificar
             // 
             this.btnModificar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificar.Location = new System.Drawing.Point(59, 152);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(99, 24);
@@ -151,6 +153,7 @@
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.Salmon;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Location = new System.Drawing.Point(217, 152);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(99, 24);
@@ -180,7 +183,8 @@
             // btnCargar
             // 
             this.btnCargar.BackColor = System.Drawing.Color.PaleGreen;
-            this.btnCargar.Location = new System.Drawing.Point(136, 233);
+            this.btnCargar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCargar.Location = new System.Drawing.Point(246, 233);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(99, 24);
             this.btnCargar.TabIndex = 6;
@@ -201,6 +205,7 @@
             // btnSalir
             // 
             this.btnSalir.BackColor = System.Drawing.Color.Salmon;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Location = new System.Drawing.Point(1252, 642);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.Name = "btnSalir";
@@ -229,6 +234,7 @@
             // 
             // gbProducto
             // 
+            this.gbProducto.Controls.Add(this.btnLimpiar);
             this.gbProducto.Controls.Add(this.txtStock);
             this.gbProducto.Controls.Add(this.cmbCategoria);
             this.gbProducto.Controls.Add(this.txtNombre);
@@ -250,6 +256,7 @@
             this.gbProducto.TabIndex = 44;
             this.gbProducto.TabStop = false;
             this.gbProducto.Text = "Cargar Producto";
+            this.gbProducto.Enter += new System.EventHandler(this.gbProducto_Enter);
             // 
             // gbModificarYEliminar
             // 
@@ -328,6 +335,18 @@
             this.panElementos.Size = new System.Drawing.Size(1342, 679);
             this.panElementos.TabIndex = 48;
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.BackColor = System.Drawing.Color.LightCoral;
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.Location = new System.Drawing.Point(30, 233);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(55, 24);
+            this.btnLimpiar.TabIndex = 44;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -378,6 +397,7 @@
         private System.Windows.Forms.Panel panElementos;
         private System.Windows.Forms.Label lblInstruccion2;
         private System.Windows.Forms.Label lblInstruccion3;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }
 
