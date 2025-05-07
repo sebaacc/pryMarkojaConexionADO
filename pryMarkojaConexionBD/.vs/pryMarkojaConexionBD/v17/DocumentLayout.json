@@ -1,7 +1,20 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Seba\\weas\\Documentso\\Estudios\\IES\\semestre3\\lab3\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\",
-  "Documents": [],
+  "WorkspaceRootPath": "E:\\Escritorio\\pryMarkojaConexionADO\\pryMarkojaConexionBD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E43D6-40C5-47B1-A79C-2D9545F3A2DE}|pryMarkojaConexionBD\\pryMarkojaConexionBD.csproj|e:\\escritorio\\prymarkojaconexionado\\prymarkojaconexionbd\\prymarkojaconexionbd\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4E4E43D6-40C5-47B1-A79C-2D9545F3A2DE}|pryMarkojaConexionBD\\pryMarkojaConexionBD.csproj|solutionrelative:prymarkojaconexionbd\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E43D6-40C5-47B1-A79C-2D9545F3A2DE}|pryMarkojaConexionBD\\pryMarkojaConexionBD.csproj|e:\\escritorio\\prymarkojaconexionado\\prymarkojaconexionbd\\prymarkojaconexionbd\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4E4E43D6-40C5-47B1-A79C-2D9545F3A2DE}|pryMarkojaConexionBD\\pryMarkojaConexionBD.csproj|solutionrelative:prymarkojaconexionbd\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E43D6-40C5-47B1-A79C-2D9545F3A2DE}|pryMarkojaConexionBD\\pryMarkojaConexionBD.csproj|e:\\escritorio\\prymarkojaconexionado\\prymarkojaconexionbd\\prymarkojaconexionbd\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E4E43D6-40C5-47B1-A79C-2D9545F3A2DE}|pryMarkojaConexionBD\\pryMarkojaConexionBD.csproj|solutionrelative:prymarkojaconexionbd\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,19 +22,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmLogin.cs",
+              "DocumentMoniker": "E:\\Escritorio\\pryMarkojaConexionADO\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\frmLogin.cs",
+              "RelativeDocumentMoniker": "pryMarkojaConexionBD\\frmLogin.cs",
+              "ToolTip": "E:\\Escritorio\\pryMarkojaConexionADO\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\frmLogin.cs",
+              "RelativeToolTip": "pryMarkojaConexionBD\\frmLogin.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAADgv2gAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T14:31:40.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmLogin.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\Escritorio\\pryMarkojaConexionADO\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\frmLogin.cs",
+              "RelativeDocumentMoniker": "pryMarkojaConexionBD\\frmLogin.cs",
+              "ToolTip": "E:\\Escritorio\\pryMarkojaConexionADO\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\frmLogin.cs [Dise\u00F1o]",
+              "RelativeToolTip": "pryMarkojaConexionBD\\frmLogin.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T14:31:11.994Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmMenu.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\Escritorio\\pryMarkojaConexionADO\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\frmMenu.cs",
+              "RelativeDocumentMoniker": "pryMarkojaConexionBD\\frmMenu.cs",
+              "ToolTip": "E:\\Escritorio\\pryMarkojaConexionADO\\pryMarkojaConexionBD\\pryMarkojaConexionBD\\frmMenu.cs [Dise\u00F1o]",
+              "RelativeToolTip": "pryMarkojaConexionBD\\frmMenu.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T14:29:44.638Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }
