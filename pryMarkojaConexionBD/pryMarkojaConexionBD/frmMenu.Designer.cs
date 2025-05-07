@@ -49,11 +49,11 @@
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.gbProducto = new System.Windows.Forms.GroupBox();
             this.gbModificarYEliminar = new System.Windows.Forms.GroupBox();
+            this.lblInstruccion3 = new System.Windows.Forms.Label();
+            this.lblInstruccion2 = new System.Windows.Forms.Label();
             this.pbLogoABM = new System.Windows.Forms.PictureBox();
             this.tlpCentrador = new System.Windows.Forms.TableLayoutPanel();
             this.panElementos = new System.Windows.Forms.Panel();
-            this.lblInstruccion2 = new System.Windows.Forms.Label();
-            this.lblInstruccion3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.gbProducto.SuspendLayout();
             this.gbModificarYEliminar.SuspendLayout();
@@ -202,7 +202,7 @@
             // 
             this.btnSalir.BackColor = System.Drawing.Color.Salmon;
             this.btnSalir.Location = new System.Drawing.Point(1252, 642);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(71, 24);
             this.btnSalir.TabIndex = 42;
@@ -215,7 +215,7 @@
             this.cmbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCategoria.FormattingEnabled = true;
             this.cmbCategoria.Location = new System.Drawing.Point(31, 179);
-            this.cmbCategoria.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbCategoria.Margin = new System.Windows.Forms.Padding(2);
             this.cmbCategoria.Name = "cmbCategoria";
             this.cmbCategoria.Size = new System.Drawing.Size(128, 21);
             this.cmbCategoria.TabIndex = 43;
@@ -243,9 +243,9 @@
             this.gbProducto.Controls.Add(this.lblPrecio);
             this.gbProducto.Controls.Add(this.lblCategoria);
             this.gbProducto.Location = new System.Drawing.Point(62, 84);
-            this.gbProducto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbProducto.Margin = new System.Windows.Forms.Padding(2);
             this.gbProducto.Name = "gbProducto";
-            this.gbProducto.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbProducto.Padding = new System.Windows.Forms.Padding(2);
             this.gbProducto.Size = new System.Drawing.Size(378, 282);
             this.gbProducto.TabIndex = 44;
             this.gbProducto.TabStop = false;
@@ -258,19 +258,41 @@
             this.gbModificarYEliminar.Controls.Add(this.btnModificar);
             this.gbModificarYEliminar.Controls.Add(this.btnEliminar);
             this.gbModificarYEliminar.Location = new System.Drawing.Point(62, 371);
-            this.gbModificarYEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbModificarYEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.gbModificarYEliminar.Name = "gbModificarYEliminar";
-            this.gbModificarYEliminar.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbModificarYEliminar.Padding = new System.Windows.Forms.Padding(2);
             this.gbModificarYEliminar.Size = new System.Drawing.Size(378, 208);
             this.gbModificarYEliminar.TabIndex = 45;
             this.gbModificarYEliminar.TabStop = false;
             this.gbModificarYEliminar.Text = "Cambiar o Eliminar producto";
             // 
+            // lblInstruccion3
+            // 
+            this.lblInstruccion3.AutoSize = true;
+            this.lblInstruccion3.Location = new System.Drawing.Point(27, 98);
+            this.lblInstruccion3.MaximumSize = new System.Drawing.Size(350, 0);
+            this.lblInstruccion3.Name = "lblInstruccion3";
+            this.lblInstruccion3.Size = new System.Drawing.Size(330, 26);
+            this.lblInstruccion3.TabIndex = 13;
+            this.lblInstruccion3.Text = "Para Modificar: Seleccione producto de la grilla. No debe cambiar el código sino " +
+    "no se modificará. Luego presione en \"Modificar\".";
+            // 
+            // lblInstruccion2
+            // 
+            this.lblInstruccion2.AutoSize = true;
+            this.lblInstruccion2.Location = new System.Drawing.Point(27, 46);
+            this.lblInstruccion2.MaximumSize = new System.Drawing.Size(350, 0);
+            this.lblInstruccion2.Name = "lblInstruccion2";
+            this.lblInstruccion2.Size = new System.Drawing.Size(339, 26);
+            this.lblInstruccion2.TabIndex = 12;
+            this.lblInstruccion2.Text = "Para Borrar: Ingrese el código del producto arriba, y luego presione en \"Eliminar" +
+    "\".";
+            // 
             // pbLogoABM
             // 
             this.pbLogoABM.Image = global::pryMarkojaConexionBD.Properties.Resources.FreePik_abm;
             this.pbLogoABM.Location = new System.Drawing.Point(1259, 13);
-            this.pbLogoABM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbLogoABM.Margin = new System.Windows.Forms.Padding(2);
             this.pbLogoABM.Name = "pbLogoABM";
             this.pbLogoABM.Size = new System.Drawing.Size(64, 56);
             this.pbLogoABM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -284,11 +306,11 @@
             this.tlpCentrador.Controls.Add(this.panElementos, 0, 0);
             this.tlpCentrador.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpCentrador.Location = new System.Drawing.Point(0, 0);
-            this.tlpCentrador.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tlpCentrador.Margin = new System.Windows.Forms.Padding(2);
             this.tlpCentrador.Name = "tlpCentrador";
             this.tlpCentrador.RowCount = 1;
             this.tlpCentrador.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpCentrador.Size = new System.Drawing.Size(1370, 683);
+            this.tlpCentrador.Size = new System.Drawing.Size(1364, 683);
             this.tlpCentrador.TabIndex = 47;
             // 
             // panElementos
@@ -300,39 +322,17 @@
             this.panElementos.Controls.Add(this.gbModificarYEliminar);
             this.panElementos.Controls.Add(this.btnSalir);
             this.panElementos.Controls.Add(this.gbProducto);
-            this.panElementos.Location = new System.Drawing.Point(14, 2);
-            this.panElementos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panElementos.Location = new System.Drawing.Point(11, 2);
+            this.panElementos.Margin = new System.Windows.Forms.Padding(2);
             this.panElementos.Name = "panElementos";
             this.panElementos.Size = new System.Drawing.Size(1342, 679);
             this.panElementos.TabIndex = 48;
-            // 
-            // lblInstruccion2
-            // 
-            this.lblInstruccion2.AutoSize = true;
-            this.lblInstruccion2.Location = new System.Drawing.Point(27, 46);
-            this.lblInstruccion2.MaximumSize = new System.Drawing.Size(350, 0);
-            this.lblInstruccion2.Name = "lblInstruccion2";
-            this.lblInstruccion2.Size = new System.Drawing.Size(339, 26);
-            this.lblInstruccion2.TabIndex = 12;
-            this.lblInstruccion2.Text = "Para Borrar: Ingrese el código del producto arriba, y luego presione en \"Eliminar" +
-    "\".";
-            // 
-            // lblInstruccion3
-            // 
-            this.lblInstruccion3.AutoSize = true;
-            this.lblInstruccion3.Location = new System.Drawing.Point(27, 98);
-            this.lblInstruccion3.MaximumSize = new System.Drawing.Size(350, 0);
-            this.lblInstruccion3.Name = "lblInstruccion3";
-            this.lblInstruccion3.Size = new System.Drawing.Size(330, 26);
-            this.lblInstruccion3.TabIndex = 13;
-            this.lblInstruccion3.Text = "Para Modificar: Seleccione producto de la grilla. No debe cambiar el código sino " +
-    "no se modificará. Luego presione en \"Modificar\".";
             // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 683);
+            this.ClientSize = new System.Drawing.Size(1364, 683);
             this.Controls.Add(this.tlpCentrador);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMenu";

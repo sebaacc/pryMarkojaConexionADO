@@ -1,0 +1,38 @@
+CREATE DATABASE Tienda;
+USE [Tienda]
+
+CREATE TABLE [dbo].[Productos](
+	[Codigo] [int] NOT NULL,
+	[Nombre] [varchar](100) NOT NULL,
+	[Descripcion] [varchar](255) NULL,
+	[Precio] [decimal](10, 2) NOT NULL,
+	[Stock] [int] NOT NULL,
+	[Categoria] [varchar](50) NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Codigo] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+
+CREATE TABLE [dbo].[Usuario](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[NombreUsuario] [nvarchar](50) NOT NULL,
+	[ContraseñaHash] [nvarchar](64) NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+
+INSERT [dbo].[Productos] ([Codigo], [Nombre], [Descripcion], [Precio], [Stock], [Categoria]) VALUES (1, N'Televisor LED 32"', N'Pantalla LED de 32 pulgadas', CAST(350.00 AS Decimal(10, 2)), 15, N'Electrónicos')
+INSERT [dbo].[Productos] ([Codigo], [Nombre], [Descripcion], [Precio], [Stock], [Categoria]) VALUES (2, N'Alfajor Rasta', N'Alfajor Rasta Negro x70gr', CAST(1.50 AS Decimal(10, 2)), 200, N'Alimentos')
+INSERT [dbo].[Productos] ([Codigo], [Nombre], [Descripcion], [Precio], [Stock], [Categoria]) VALUES (3, N'Silla de Oficina', N'Cómoda silla ergonómica para oficina', CAST(60.00 AS Decimal(10, 2)), 30, N'Bazar/Librería')
+INSERT [dbo].[Productos] ([Codigo], [Nombre], [Descripcion], [Precio], [Stock], [Categoria]) VALUES (4, N'Smartphone Samsung Galaxy S21', N'Teléfono móvil con cámara de 108MP', CAST(600.00 AS Decimal(10, 2)), 25, N'Electronicos')
+INSERT [dbo].[Productos] ([Codigo], [Nombre], [Descripcion], [Precio], [Stock], [Categoria]) VALUES (5, N'Carolina Herrera Very Good Girl', N'Perfume Carolina Herrera aroma Floral Frutal', CAST(165.00 AS Decimal(10, 2)), 50, N'Perfumes')
+INSERT [dbo].[Productos] ([Codigo], [Nombre], [Descripcion], [Precio], [Stock], [Categoria]) VALUES (6, N'Detergente Cif', N'Detergente Cif BioActive Lima x300ml', CAST(25.00 AS Decimal(10, 2)), 35, N'Limpieza')
+
+SET IDENTITY_INSERT [dbo].[Usuario] ON 
+
+INSERT [dbo].[Usuario] ([Id], [NombreUsuario], [ContraseñaHash]) VALUES (1, N'mastermarian', N'8d423deba40a20ddb96fe1d1d131b89da7b665b5e3997d2e81730b8af88b9908')
+INSERT [dbo].[Usuario] ([Id], [NombreUsuario], [ContraseñaHash]) VALUES (2, N'juli', N'6373faa6f3d3743a39e9cf636ffaa43393addaf9ff673f08521dbaa0af3893b2')
+SET IDENTITY_INSERT [dbo].[Usuario] OFF

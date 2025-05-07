@@ -44,41 +44,46 @@
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(127, 116);
+            this.lblUsuario.Location = new System.Drawing.Point(95, 94);
+            this.lblUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(54, 16);
+            this.lblUsuario.Size = new System.Drawing.Size(43, 13);
             this.lblUsuario.TabIndex = 0;
             this.lblUsuario.Text = "Usuario";
             // 
             // txtNuevoUsuario
             // 
-            this.txtNuevoUsuario.Location = new System.Drawing.Point(127, 143);
+            this.txtNuevoUsuario.Location = new System.Drawing.Point(95, 116);
+            this.txtNuevoUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNuevoUsuario.Name = "txtNuevoUsuario";
-            this.txtNuevoUsuario.Size = new System.Drawing.Size(287, 22);
+            this.txtNuevoUsuario.Size = new System.Drawing.Size(216, 20);
             this.txtNuevoUsuario.TabIndex = 1;
             // 
             // txtNuevaContraseña
             // 
-            this.txtNuevaContraseña.Location = new System.Drawing.Point(127, 235);
+            this.txtNuevaContraseña.Location = new System.Drawing.Point(95, 191);
+            this.txtNuevaContraseña.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNuevaContraseña.Name = "txtNuevaContraseña";
             this.txtNuevaContraseña.PasswordChar = '*';
-            this.txtNuevaContraseña.Size = new System.Drawing.Size(287, 22);
+            this.txtNuevaContraseña.Size = new System.Drawing.Size(216, 20);
             this.txtNuevaContraseña.TabIndex = 3;
             // 
             // lblContraseña
             // 
             this.lblContraseña.AutoSize = true;
-            this.lblContraseña.Location = new System.Drawing.Point(127, 207);
+            this.lblContraseña.Location = new System.Drawing.Point(95, 168);
+            this.lblContraseña.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(76, 16);
+            this.lblContraseña.Size = new System.Drawing.Size(61, 13);
             this.lblContraseña.TabIndex = 2;
             this.lblContraseña.Text = "Contraseña";
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(176, 294);
+            this.btnRegistrar.Location = new System.Drawing.Point(132, 239);
+            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(188, 39);
+            this.btnRegistrar.Size = new System.Drawing.Size(141, 32);
             this.btnRegistrar.TabIndex = 4;
             this.btnRegistrar.Text = "Registrarme";
             this.btnRegistrar.UseVisualStyleBackColor = true;
@@ -88,9 +93,10 @@
             // 
             this.lblRegistroInvitacion.AutoSize = true;
             this.lblRegistroInvitacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRegistroInvitacion.Location = new System.Drawing.Point(55, 36);
+            this.lblRegistroInvitacion.Location = new System.Drawing.Point(41, 29);
+            this.lblRegistroInvitacion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRegistroInvitacion.Name = "lblRegistroInvitacion";
-            this.lblRegistroInvitacion.Size = new System.Drawing.Size(445, 25);
+            this.lblRegistroInvitacion.Size = new System.Drawing.Size(372, 20);
             this.lblRegistroInvitacion.TabIndex = 5;
             this.lblRegistroInvitacion.Text = "Registrate para poder acceder a ABM Master";
             // 
@@ -101,10 +107,11 @@
             this.tlpCentrador.Controls.Add(this.panElementos, 0, 0);
             this.tlpCentrador.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpCentrador.Location = new System.Drawing.Point(0, 0);
+            this.tlpCentrador.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tlpCentrador.Name = "tlpCentrador";
             this.tlpCentrador.RowCount = 1;
             this.tlpCentrador.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpCentrador.Size = new System.Drawing.Size(875, 450);
+            this.tlpCentrador.Size = new System.Drawing.Size(656, 366);
             this.tlpCentrador.TabIndex = 6;
             // 
             // panElementos
@@ -116,19 +123,22 @@
             this.panElementos.Controls.Add(this.txtNuevaContraseña);
             this.panElementos.Controls.Add(this.txtNuevoUsuario);
             this.panElementos.Controls.Add(this.lblContraseña);
-            this.panElementos.Location = new System.Drawing.Point(162, 48);
+            this.panElementos.Location = new System.Drawing.Point(122, 39);
+            this.panElementos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panElementos.Name = "panElementos";
-            this.panElementos.Size = new System.Drawing.Size(550, 354);
+            this.panElementos.Size = new System.Drawing.Size(412, 288);
             this.panElementos.TabIndex = 8;
             // 
             // frmRegistroUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(875, 450);
+            this.ClientSize = new System.Drawing.Size(656, 366);
             this.Controls.Add(this.tlpCentrador);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmRegistroUsuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmRegistroUsuario";
             this.Load += new System.EventHandler(this.frmRegistroUsuario_Load);
             this.tlpCentrador.ResumeLayout(false);
