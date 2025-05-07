@@ -33,6 +33,8 @@
             this.btnLogin = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.lblLinkRegistrarse = new System.Windows.Forms.LinkLabel();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtUsuario
@@ -78,11 +80,33 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "label2";
             // 
+            // lblLinkRegistrarse
+            // 
+            this.lblLinkRegistrarse.AutoSize = true;
+            this.lblLinkRegistrarse.Location = new System.Drawing.Point(386, 280);
+            this.lblLinkRegistrarse.Name = "lblLinkRegistrarse";
+            this.lblLinkRegistrarse.Size = new System.Drawing.Size(77, 16);
+            this.lblLinkRegistrarse.TabIndex = 5;
+            this.lblLinkRegistrarse.TabStop = true;
+            this.lblLinkRegistrarse.Text = "Registrarse";
+            this.lblLinkRegistrarse.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblLinkRegistrarse_LinkClicked);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(339, 280);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(44, 16);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "label3";
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblLinkRegistrarse);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLogin);
@@ -105,5 +129,7 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.LinkLabel lblLinkRegistrarse;
+        private System.Windows.Forms.Label label3;
     }
 }

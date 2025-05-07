@@ -33,3 +33,4 @@ D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMark
 D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarko.B1AFA623.Up2Date
 D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.exe
 D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.pdb
+D:\Seba\weas\Documentso\Estudios\IES\semestre3\lab3\pryMarkojaConexionBD\pryMarkojaConexionBD\pryMarkojaConexionBD\obj\Debug\pryMarkojaConexionBD.frmRegistroUsuario.resources

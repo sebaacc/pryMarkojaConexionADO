@@ -92,5 +92,11 @@ namespace pryMarkojaConexionBD
                 return builder.ToString();
             }
         }
+
+        private void lblLinkRegistrarse_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmRegistroUsuario registro = new frmRegistroUsuario();
+            registro.ShowDialog();
+        }
     }
 }
